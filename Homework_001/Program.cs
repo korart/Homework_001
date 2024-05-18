@@ -7,7 +7,7 @@ namespace Homework_001
 		static void Main()
 		{
 			Console.OutputEncoding = Encoding.UTF8;
-			
+
 			#region Ex1.1
 			/*
 			 * Рассчитать и вывести на экран площадь и периметр прямоугольника
@@ -51,8 +51,8 @@ namespace Homework_001
 			{
 				if (i % 7 == 1 || i % 7 == 2 || i % 7 == 5)
 				{
-                    Console.Write(i + " ");
-                }
+					Console.Write(i + " ");
+				}
 			}
 			Console.WriteLine();
 			Console.WriteLine();
@@ -74,23 +74,23 @@ namespace Homework_001
 			while (numOfBoxes > 0)
 			{
 				Console.WriteLine("There are {0} boxes of apples in the warehouse", numOfBoxes);
-                Console.Write("Boxes for shipment: ");
+				Console.Write("Boxes for shipment: ");
 				int boxes = Convert.ToInt32(Console.ReadLine());
 				if (boxes < 0)
 				{
-                    Console.WriteLine("Incorrect number of boxes");
+					Console.WriteLine("Incorrect number of boxes");
 					continue;
-                }
+				}
 				if (boxes > numOfBoxes)
 				{
-                    Console.WriteLine("Not enough boxes...");
+					Console.WriteLine("Not enough boxes...");
 					boxes = numOfBoxes;
-                }
-                Console.WriteLine("{0} boxes have been sent", boxes);
+				}
+				Console.WriteLine("{0} boxes have been sent", boxes);
 				numOfBoxes -= boxes;
-            }
-            #endregion
-        }
+			}
+			#endregion
+		}
 
 	}
 }
